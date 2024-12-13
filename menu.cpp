@@ -12,17 +12,8 @@ void sortingAsc();
 void sortingDsc();
 void tukar(int *a, int *b);
 
-void mPertama(string pesan){
-system("cls");
-cout<<"hallo saya menu "<<pesan;
-getch();
 
-}
-void tukar(int *a,int *b){
-int t=*a;
-*a=*b;
-*b=t;
-}
+
 
 int main()
 {
@@ -75,4 +66,11 @@ int main()
     }
 } while (pl != '5');
   return 0;
+}
+
+
+void tukar(int *a,int *b){
+int t=*a;
+*a=*b;
+*b=t;
 }
