@@ -1,7 +1,7 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
-int data[100];
+int arrdata[100];
 int n;
 
 
@@ -66,6 +66,30 @@ int main()
     }
 } while (pl != '5');
   return 0;
+}
+
+void masukkanData()
+{
+  system("cls");
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Masukkan data ke-" << (i + 1) << ": ";
+        cin >> arrdata[i];
+    }
+    cout << "Data berhasil dimasukkan.\n";
+    getch();
+}
+
+void tampilkanData()
+{
+    system("cls");
+    cout << "Data yang dimasukkan:\n";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arrdata[i] << " ";
+    }
+    cout << "\n";
+    getch();
 }
 
 
