@@ -20,7 +20,7 @@ int main()
   char pl;
   cout << "Masukkan jumlah data (maksimal 100): ";
   cin >> n; // Mengatur jumlah data di sini
-  if (n > 100) n = 100; // Batasi jumlah data maksimal 100
+  if (n > 100) n = 5; // Batasi jumlah data maksimal 100
 
   do
   {
@@ -114,3 +114,20 @@ void sortingAsc()
     cout << "Data berhasil diurutkan secara ascending.\n";
     getch();
 }
+
+void sortingDsc()
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (arrdata[j] < arrdata[j + 1])
+            {
+                tukar(&arrdata[j], &arrdata[j + 1]);
+            }
+        }
+    }
+    cout << "Data berhasil diurutkan secara descending.\n";
+    getch();
+}
+
